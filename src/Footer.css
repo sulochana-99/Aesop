@@ -1,0 +1,73 @@
+.footer {
+    background-color: #343434;
+    color: white;
+  }
+  
+  hr {
+    color: white;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  /* Add more width to the Subscribe section */
+  .footer-section.subscribe-section {
+    flex-basis: calc(50% - 20px); /* Adjust the width as needed */
+  }
+  
+  /* Style for the email input */
+  .footer-section input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  
+  .footer-container-second {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-container,
+    .footer-container-second {
+      flex-direction: column;
+    }
+  
+    .footer-section,
+    .footer-container-second {
+      width: 100%;
+    }
+  }
+  
+  .sustainability-section,
+  .about-section,
+  .social-media-section {
+    flex-basis: 100%;
+  }
+  
+  @media (min-width: 769px) {
+    .sustainability-section,
+    .about-section,
+    .social-media-section {
+      flex-basis: calc(33.33% - 20px);
+    }
+  }
+  .email{
+    width: 400px;
+  }
