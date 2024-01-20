@@ -3,27 +3,24 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Carousel } from 'react-bootstrap';
 import './App.css';
 import Footer from './Footer';
-const imageUrls = [
-  'https://www.aesop.com/u1nb1km7t5q7/iC1baQuIzXXC6Ho3lZSFW/1226a07142e70fec26df3f0b72578cbd/Aesop_HK_Store_IFC_III_Hero_Bleed_Desktop_2880x1620px.jpg',
-  'https://www.aesop.com/u1nb1km7t5q7/42rFCFYAbY2eFFaqO5M7pf/b6964b6c5bb2c22a36f26b146132c9d3/Aesop_Harbour_City_II_Hero_Bleed_Desktop_2880x1620px.jpg',
-  'https://www.aesop.com/u1nb1km7t5q7/3qMKbyDUTGRWyBlMLWxsRu/24c4cbb32427080bbb48dca6d5161962/Aesop_Fashion_Walk_II_Hero_Bleed_Desktop_2880x1620px.jpg',
-];
-/*const imageUrls = [
-  'https://www.aesop.com/u1nb1km7t5q7/3MBwyQNwPZDKq8hxzzLh1Q/7905dac84e46772f112be054e7e97404/Aesop_B_Triple_C_2024_Web_Homepage_Primary_1_Full_Bleed_Desktop_2880x1044px.jpg',
-  'https://www.aesop.com/u1nb1km7t5q7/4XCMY8ZujIXt46JzHuA8k7/a0eefda38b29a4cc18060cdf5b6836fa/Aesop_Lucent_2023_Web_Homepage_Primary_50-50_Desktop_1536x950px.jpg',
-  'https://www.aesop.com/u1nb1km7t5q7/1Ehomdegy2vB6ERUwELzqz/a0617ec70337d07ef3c5250afb389900/Aesop_Festive_Sleeve_Asia_Web_Homepage_Primary_50-50_Desktop_1440x1500px.jpg',
-];*/
+
 
 function Home() {
 
 
   return (
     <div>
-        <div>
+        <div >
          <center>
-        
-            <li style={{listStyle:"none", backgroundColor:"grey",color:'white'}}>Trained Aesop consultants are available to provide bespoke skin care advice.Book a complimentary video consultation</li>
-            <li style={{listStyle:"none", backgroundColor:"black", color:"white"}}>Click and Collect is now available in Hong Kong. Enjoy complimentary shipping on orders over $400.</li>
+         <li className="custom-list-item">
+    <span className="custom-paragraph">Trained Aesop consultants are available to provide bespoke skin care advice.
+        <a href='#' className="custom-anchor">Book a complimentary video consultation</a></span>
+    
+      </li>
+<li className="custom-list-item second-item" >
+    <p className='paragraph'><a className="second-a" href='#' style={{textDecoration:'none', color:'white'}}>Click and Collect is now available in Hong Kong. Enjoy complimentary shipping on orders over $400.</a></p>
+</li>
+
         
          </center>
         </div>
@@ -39,77 +36,87 @@ function Home() {
     <li><a href="#">Read</a></li>
     <li><a href="#">Stores</a></li>
     <li><a href="#">Facial Appointments</a></li>
-    <li><a href="#">Search</a></li>
+    <li><a href="#"> &#128269;</a></li>
     <li><a href="#">Login</a></li>
     <li><a href="#">Cart</a></li>
   </ul>
 </nav>
 
 <Carousel >
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="https://www.aesop.com/u1nb1km7t5q7/3MBwyQNwPZDKq8hxzzLh1Q/7905dac84e46772f112be054e7e97404/Aesop_B_Triple_C_2024_Web_Homepage_Primary_1_Full_Bleed_Desktop_2880x1044px.jpg"
-          alt="First slide" style={{height:"500px"}}
-        />
-        <Carousel.Caption>
-          <center>
-          <h3>B Triple C Facial Balancing Gel</h3>
-          <p>Potent and peerless</p>
-          <p>
-            Rich in Vitamins B and C, this lightly hydrating gel with a honey-like texture, replenishes, softens, and balances the skin.
-          </p>
-          </center>
-        </Carousel.Caption>
-        
-        
-      </Carousel.Item>
-
-      <Carousel.Item style={{ backgroundColor: '#f0f0f0' }}>
-        <div className="d-flex align-items-center justify-content-center" style={{ height: '500px' }}>
-          <div className="text-center">
-            <h3>B Triple C Facial Balancing Gel</h3>
-            <p>
-              Potent and peerless. Rich in Vitamins B and C, this lightly hydrating
-              gel with a honey-like texture replenishes, softens, and balances the
-              skin.
-            </p>
-          </div>
-          <div className="w-50" >
-          <img
-          className="d-block w-100"  style={{height:"500px"}}
-          src="https://www.aesop.com/u1nb1km7t5q7/1Ehomdegy2vB6ERUwELzqz/a0617ec70337d07ef3c5250afb389900/Aesop_Festive_Sleeve_Asia_Web_Homepage_Primary_50-50_Desktop_1440x1500px.jpg"
-          alt="Second slide"
-        />
-          </div>
-        </div>
-       
-      </Carousel.Item>
      
+<Carousel.Item>
+  <div className="d-flex align-items-center justify-content-center" style={{ height: '500px' }}>
+    <div className="text-center">
+      <img
+        className="d-block w-100"
+        src="https://www.aesop.com/u1nb1km7t5q7/3MBwyQNwPZDKq8hxzzLh1Q/7905dac84e46772f112be054e7e97404/Aesop_B_Triple_C_2024_Web_Homepage_Primary_1_Full_Bleed_Desktop_2880x1044px.jpg"
+        alt="First slide"
+        style={{ height: "500px" }}
+      />
+      <Carousel.Caption>
+        <h1 style={{ paddingBottom: '50px' }}>AESOP</h1>
+        <h3>B Triple C Facial Balancing Gel</h3>
+        <p>Potent and peerless</p>
+        <p>
+          Rich in Vitamins B and C, this lightly hydrating gel with a honey-like texture, replenishes, softens, and balances the skin.
+        </p>
+        <a href="#" className='anchoe-tag'>Discover the Formulation</a>
+      </Carousel.Caption>
+    </div>
+  </div>
+</Carousel.Item>
       <Carousel.Item style={{ backgroundColor: '#f0f0f0' }}>
-        <div className="d-flex align-items-center justify-content-center" style={{ height: '500px' }}>
-          <div className="text-center">
-            <h3>B Triple C Facial Balancing Gel</h3>
-            <p>
-              Potent and peerless. Rich in Vitamins B and C, this lightly hydrating
-              gel with a honey-like texture replenishes, softens, and balances the
-              skin.
-            </p>
-          </div>
-          <div className="w-50" >
-          <img
-          className="d-block w-100"  style={{height:"500px"}}
-          src="https://www.aesop.com/u1nb1km7t5q7/4XCMY8ZujIXt46JzHuA8k7/a0eefda38b29a4cc18060cdf5b6836fa/Aesop_Lucent_2023_Web_Homepage_Primary_50-50_Desktop_1536x950px.jpg"
-          alt="Third slide"
-        />
-          </div>
-        </div>
-        
-      </Carousel.Item>
+  <div className="d-flex align-items-center justify-content-center" style={{ height: '500px' }}>
+    
+    
+    
+    <div className="text-center" style={{ marginBottom: '150px' }}>
+      <h1 style={{paddingBottom:'50px'}}>AESOP</h1>
+      <h5 >B Triple C Facial Balancing Gel</h5>
+      <p >
+      To celebrate the festive season, all gift orders will be wrapped in a decorative sleeve—perfect for sending directly to recipients. Gift wrapping is available to add to your order at checkout. 
+      </p>
+      <a href="#" className='anchoe-tag'>Browse the Gift Guide</a>
+    </div>
+    <div className="w-100">
+      <img
+        className="d-block w-100" 
+        style={{ height: "500px", width:'400px'}} 
+        src="https://www.aesop.com/u1nb1km7t5q7/1Ehomdegy2vB6ERUwELzqz/a0617ec70337d07ef3c5250afb389900/Aesop_Festive_Sleeve_Asia_Web_Homepage_Primary_50-50_Desktop_1440x1500px.jpg"
+        alt="Second slide"
+      />
+    </div>
+  </div>
+</Carousel.Item>
+
+     
+      <Carousel.Item style={{ backgroundColor: '#f0f0f0'  }}>
+  <div className="d-flex align-items-center justify-content-center" style={{ height: '500px', backgroundColor: '#F6F5E8' }}>
+    <div className="text-center">
+    <h1 style={{paddingBottom:'50px'}}>AESOP</h1>
+      <h3>B Triple C Facial Balancing Gel</h3>
+      <p style={{ fontSize: '1rem', lineHeight: '1.7' }}>
+        Potent and peerless. Rich in Vitamins B and C, this lightly hydrating
+        gel with a honey-like texture replenishes, softens, and balances the
+        skin.
+      </p>
+      <a href="#" className='anchoe-tag'>Discover More</a>
+    </div>
+    <div className="w-80">
+      <img
+        className="d-block w-100"
+        style={{ height: "500px", maxWidth: "150%" ,width:'300px'}} 
+        src="https://www.aesop.com/u1nb1km7t5q7/4XCMY8ZujIXt46JzHuA8k7/a0eefda38b29a4cc18060cdf5b6836fa/Aesop_Lucent_2023_Web_Homepage_Primary_50-50_Desktop_1536x950px.jpg"
+        alt="Third slide"
+      />
+    </div>
+  </div>
+</Carousel.Item>
+
       
     </Carousel>
      
-      <div class="sliders" > 
+      <div class="sliders"  style={{marginTop:'80px'}}> 
   <div style={{width:"400px",marginRight:"100px",  paddingLeft:"30px"}}>
     <p>Skin Care+</p>
     <p style={{fontSize:"25px"}}>Intensive formulations for complex skin</p>
@@ -129,6 +136,7 @@ function Home() {
   <div>
     <img src="https://www.aesop.com/u1nb1km7t5q7/11SkMKAwt3wKeDg1Rg63wn/0f9e8e78c8a21a7655a3d8f5c42fbdf4/Aesop_Skin_Parsley_Seed_Anti-Oxidant_Facial_Treatment_15mL_Web_Large_684x668px.png" alt="Image 4" />
   </div>
+  
 </div>
       <div className='dryskin-section' style={{paddingBottom:"200px"}}>
         <div className='dryskin-image'>
